@@ -4,10 +4,13 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     
 }
+.hidden {
+    display: none;
+}
 /*Header Section */
 header {
     display: grid;
-    grid-template-columns: 1.5fr 3fr 2fr;
+    grid-template-columns: 1.5fr 3fr 1.5fr;
     align-items: center;
     background-color: antiquewhite;
     
@@ -27,45 +30,74 @@ header {
 }
 
 /* Navigation Bar */
-.navLinks {
-    display: flex;
-    list-style: none;
-    gap: 2%;
-    
+/*This section will be for when the screen is smaller in width then 900px*/
+@media (max-width: 900px) {
+    #hamburger {
+        display: flex;
+        justify-content: center;
+        font-size: clamp(30px, 5vw, 50px);
+        grid-column: 3/4;
+        cursor: pointer;
+    }
 }
 
-.toggle {
+/*Hamburger disapears when screen is bigger then 900px*/
+.hamburger {
     display: none;
 }
-.menuNav {
-    font-size: 30px;
-    color: black;
-    cursor: pointer;
-    display: none;
+
+
+/*The pop display for when the hamburger is clicked */
+#popUp {
+    background-color: rgba(143, 155, 152, 0.95);
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+    
 }
-.navLinks a {
+#popUp ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 70%;
+    padding-top: 15%;
+    gap: 5vh;
+    font-size: clamp(20px, 5vw, 30px);
+    height: 100vh;
+    width: 100vw;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+@media (max-width: 650px) {
+#popUp ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 60%;
+    padding-top: 15%;
+    gap: 5vh;
+    font-size: clamp(20px, 5vw, 30px);
+    height: 100vh;
+    width: 100vw;
+    font-weight: bold;
+    list-style-type: none;
+}
+}
+
+#popUp a {
     text-decoration: none;
     color: black;
 }
-
-@media (max-width: 900px) {
-    .navLinks {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 100%;
-        background-color: antiquewhite;
-        grid-column: 3/4;
-        justify-self: end;
-        z-index: 10;
-    }
-    .toggle:checked + .menuNav + .navLinks {
-        display: flex;
-    }
-    .menuNav {
-        display: block;
-        
-    }
+.closeBtn {
+    font-size: 10vh;
+    cursor: pointer;
+    position: fixed;
+    top: 3px;
+    right: 5%;
+    z-index: 12;
 }
+/*End pop up display */

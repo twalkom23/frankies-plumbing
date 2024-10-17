@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="myScript.js" defer></script>
     <title>Frankies Plumbing</title>
 </head>
 <body>
@@ -14,14 +15,9 @@
 
         
         <nav>
-            <input type="checkbox" id="toggle" class="toggle">
-            <label for="toggle" class="menuNav">&#9776;</label>
-            <ul class="navLinks">
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
-                <li><a href="">Services</a></li>
-                <li><a href="">Contact</a></li>
-            </ul>
+            <div class="hamburger" id="hamburger">
+                &#9776;
+            </div>
         </nav>
         
         
@@ -30,5 +26,17 @@
 
 
     
+
+
+    <!--This will contain the pop up that show when hamburger is clicked-->
+    <nav class="hidden" id="popUp">
+        <buttton class="closeBtn">&times;</buttton>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
