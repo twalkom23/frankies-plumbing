@@ -10,25 +10,55 @@
 <body>
 
     <header>
+        
         <img class="logo" src="assets/dog-logo.png" alt="logo">
         <h1 class="mainHeader">Frankies Plumbing</h1>
 
-        
+        <!--This will show on screens greater then 900px-->
+        <ul class="headerPageLinks">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+
+        <!--This will show on screens less then 900 px-->
         <nav>
             <div class="hamburger" id="hamburger">
                 &#9776;
             </div>
         </nav>
-        
-        
+    
     </header>
 
+    
+    <section class="mainImageContainer">
+        <img class="mainImage" src="assets/main-page-image.jpg">
+        <p class="mainImageText">Reliable plumbing services for homes and businesses. From repairs to installations, our experienced team is dedicated to solving your plumbing issues efficiently.<br><span class="contactUsTodayText">Contact us today!</span></p>
+        <button class="mainImageContactButton">Call Us!</button>
+    </section>
 
+    <section class="homePageServicesContainer">
+        <div class="drainCleaningContainer">
+
+        </div>
+        <div class="leakDetectionContainer">
+
+        </div>
+        <div class="fixtureInstallationsContainer">
+
+        </div>
+        <div class="waterHeaterServicesContainer">
+            
+        </div>
+    </section>
+    
 
     
 
 
     <!--This will contain the pop up that show when hamburger is clicked-->
+   
     <nav class="hidden" id="popUp">
         <buttton class="closeBtn">&times;</buttton>
         <ul>
@@ -38,5 +68,6 @@
             <li><a href="">Contact</a></li>
         </ul>
     </nav>
+
 </body>
 </html>
