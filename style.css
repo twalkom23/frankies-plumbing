@@ -26,7 +26,7 @@ header {
 }
 .logo {
     width: 100%;
-    max-width: 150px;
+    max-width: 100px;
     grid-column: 1 / 2;
     justify-self: center;
     color: #FFFFFF;
@@ -34,7 +34,7 @@ header {
 
 .mainHeader {
     grid-column: 2 / 3;
-    font-size: clamp(15px, 5vw, 40px);
+    font-size: clamp(15px, 5vw, 35px);
     align-self: center;
     text-align: center;
 }
@@ -141,7 +141,6 @@ header {
     opacity: 0.3;
     object-fit: cover;
     object-position: -100px center;
-    filter: brightness(30%);
 }
 .mainImageText {
     position: absolute;
@@ -151,7 +150,7 @@ header {
     font-weight: bold;
     width: 70%;
     font-size: clamp(15px, 2vw, 25px);
-    color: #FAF9F6;
+    color: #002A5E;
     line-height: 2;
 }
 .contactUsTodayText {
@@ -385,7 +384,7 @@ header {
     .basicInfoSection {
         display: grid;
         grid-template-columns: 0.3fr 1fr 4fr 0.2fr;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-rows:  1fr 1fr 1fr 1fr 1fr 1fr;
         height: 30vh;
         align-items: center;
         font-size: clamp(10px, 3vw, 20px);
@@ -394,39 +393,51 @@ header {
    
     .openingHoursHeader {
         grid-column: 2/3;
-        grid-row: 1/2;
+        grid-row: 2/3;
         font-weight: bold;
+        
     }
     .openingHours {
-        grid-row: 1/2;
+        grid-row: 2/3;
         grid-column: 3/4;
     }
     .addressHeader {
         grid-column: 2/3;
-        grid-row: 2/3;
+        grid-row: 3/4;
         font-weight: bold;
     }
     .address {
-        grid-row: 2/3;
+        grid-row: 3/4;
         grid-column: 3/4;
     }
     .phoneHeader {
         grid-column: 2/3;
-        grid-row: 3/4;
+        grid-row: 4/5;
         font-weight: bold;
     }
     .phoneNumber {
-        grid-row: 3/4;
+        grid-row: 4/5;
         grid-column: 3/4;
     }
     .emailHeader {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 2/3;
         font-weight: bold;
     }
     .emailAddress {
-        grid-row: 4/5;
+        grid-row: 5/6;
         grid-column: 3/4;
+    }
+    /*Footer section */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2vh;
+        padding: 1.5%;
+        background-color: black;
+        color: white;
+        font-size: clamp(10px, 3vw, 15px);
     }
     
 
