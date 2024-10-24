@@ -3,106 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Frankie's Plumbing</title>
     <script src="myScript.js" defer></script>
-    <title>Frankies Plumbing</title>
+    <link rel="styleSheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+        </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
-
-    <header>
-        
-        <img class="logo" src="assets/dog-logo.png" alt="logo">
-        <h1 class="mainHeader">Frankies Plumbing</h1>
-
-        <!--This will show on screens greater then 900px-->
-        <ul class="headerPageLinks">
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-
-        <!--This will show on screens less then 900 px-->
-        <nav>
-            <div class="hamburger" id="hamburger">
-                &#9776;
+    <header class="mainPageHeader bg-primary">
+        <div class="container">
+            <div class="logo">
+                <p class="text-large"></p>
             </div>
-        </nav>
-    
+            <div class="hamburger">
+
+            </div>
+        </div>
     </header>
-
     
-    <section class="mainImageContainer">
-        <img class="mainImage" src="assets/main-page-image.jpg">
-        <p class="mainImageText">Reliable plumbing services for homes and businesses. From repairs to installations, our experienced team is dedicated to solving your plumbing issues efficiently.<br><span class="contactUsTodayText">Contact us today!</span></p>
-        <button class="mainImageContactButton">Call Us!</button>
-    </section>
-
-
-    <section class="homePageServicesContainer" id="clickableDiv">
-        
-        <div class="drainCleaningContainer">
-            <h1 class="drainCleaningHeader">Drain Cleaning <span>&#x1F6BD;</span></h1>
-            <p>Our professional drain cleaning services efficiently remove clogs and blockages, ensuring smooth water flow and preventing future plumbing issues.</p>
-        </div>
-          
-        <div class="leakDetectionContainer">
-            <h1 class="leakDetectionHeader">Leak Detection <span>&#x1F4A7;</span></h1>
-            <p>Our expert leak detection service pinpoints hidden leaks quickly, helping you prevent water damage and costly repairs.</p>
-        </div>
-        
-        <div class="fixtureInstallationsContainer">
-            <h1 class="fixtureInstallationHeader">Fixture <span>&#x1F527;</span><br> Installation</h1>
-            <p>Our fixture installation service ensures seamless setup of faucets, sinks, toilets, and more, providing a professional finish and optimal functionality for your home or business.</p>
-        </div>
-        
-        <div class="waterHeaterServicesContainer" >
-            <h1 class="waterHeaterServicesHeader">Water Heater <span>&#x1F525;</span><br> Services</h1>
-            <p>Our water heater services include expert installation, maintenance, and repairs to ensure reliable hot water for your home, improving efficiency and extending the life of your system.</p>
-        </div>
-    </section>
-
-
-    <section class="contactUsSmallSection">
-        <p>Request a call back for a free quote</p>
-        <button class="callBackButton">Free Quote</button>
-    </section>
-    
-    <section class="quickLinks">
-        <a href="">- About</a>
-        <a href="">- Services</a>
-        <a href="">- Contact</a>
-    </section>
-
-    <section class="basicInfoSection">
-        <p class="openingHoursHeader">Hours:</p>
-        <p class="openingHours">9am - 5pm Monday to Friday</p>
-        <p class="addressHeader">Address:</p>
-        <p class="address">35 Melbourne Street, Darwin, Australia, 4065</p>
-        <p class="phoneHeader">Phone:</p>
-        <p class="phoneNumber">0473 065 111</p>
-        <p class="emailHeader">Email: </p>
-        <p class="emailAddress">Jesus@frankiesplumbing.com</p>
-    </section>
-
-    <section class="footer">
-        <p>&copy; 2024 Frankie Web Designs. All Rights Reserved.</p>
-        <p>Website designed and developed by Frankie Web Designs.</p>
-    </section>
-    
-
-
-    <!--This will contain the pop up that show when hamburger is clicked-->
-   
-    <nav class="hidden" id="popUp">
-        <buttton class="closeBtn">&times;</buttton>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
-    </nav>
-
 </body>
 </html>
