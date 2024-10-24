@@ -19,7 +19,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 20px;
 }
 .main-page-header .container .logo {
     font-weight: 700;
@@ -46,6 +48,20 @@ body {
 }
 
 /*Service Cards*/
+.service-cards .container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.service-cards .container div:nth-child(1) {
+    margin-top: 30px;
+}
+.service-cards .container div:nth-child(4) {
+    margin-bottom: 30px;
+}
+.service-cards .container .card {
+    padding: 20px;
+}
 
 
 
@@ -67,7 +83,7 @@ body {
         padding: 5px 10px;
         border-radius: 13px;
         width: fit-content;
-        box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
+        
     }
     .btn-dark {
         background-color: var(--primary-colour);
