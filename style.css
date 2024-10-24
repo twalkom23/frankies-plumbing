@@ -19,9 +19,33 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-   
+    padding: 10px 20px;
+}
+.main-page-header .container .logo {
+    font-weight: 700;
 }
 
+/*Hero*/
+.hero {
+    background: url(./assets/hero-image.jpg) no-repeat;
+    background-size: 480px auto;
+}
+.hero .container {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding-bottom: 30px;
+}
+.hero .container .hero-text {
+    width: 70%;
+    color: var(--primary-colour);
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/*Service Cards*/
 
 
 
@@ -29,14 +53,35 @@ body {
 
 /*Utility Classes*/
 /* Containers */
-@media(max-width: 480px) {/*Small mobile screens*/
 .container {
-    max-width: 300px;
+    width: 90%;
+    margin: auto;
 }
+
+/*Buttons*/ 
+@media(max-width: 480px) {
+    .btn-light{
+        background: var(--light-colour);
+        color: var(--primary-colour);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 13px;
+        width: fit-content;
+        box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
+    }
+    .btn-dark {
+        background-color: var(--primary-colour);
+        color: var(--light-colour);
+        border: none;
+        padding: 5px 10px;
+        border-radius: 13px;
+        width: fit-content;
+        box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
+        
+    }
 }
 
 /*text*/
-
 @media(max-width: 480px) { /*Small Mobile screens*/
 .text-small {
     font-size: 0.75rem;
@@ -47,7 +92,7 @@ body {
 .text-regular {
     font-size: 1rem;
     line-height: 1.4;
-    font-weight: 600;
+    font-weight: normal;
     
 }
 .text-large {
@@ -59,7 +104,7 @@ body {
 .text-x-large {
     font-size: 1.75rem;
     line-height: 1.4;
-    font-weight: normal;
+    font-weight: 600;
     
 }
 .text-xx-large {
@@ -73,11 +118,11 @@ body {
 /*Backgrounds*/
 .bg-primary {
     background: var(--primary-colour);
-    color: #fff;
+    color:  var(--light-colour);
 }
 .bg-light {
     background: var(--light-colour);
-    color: #333;
+    color: var(--primary-colour);
 }
 .bg-dark {
     background: var(--dark-colour);
