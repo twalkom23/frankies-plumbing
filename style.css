@@ -30,16 +30,16 @@ body {
 /*Hero*/
 .hero {
     background: url(./assets/hero-image.jpg) no-repeat;
-    background-size: 480px auto;
+    background-size: 550px auto;
 }
 .hero .container {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     padding-bottom: 30px;
 }
 .hero .container .hero-text {
-    width: 70%;
+    width: 55%;
     color: var(--primary-colour);
     padding-top: 20px;
     display: flex;
@@ -75,6 +75,35 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 30px 0;
+}
+
+/*Why Work with us*/
+.work-with-us .container img {
+    width: 100%;
+    height: auto;
+}
+.work-with-us .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    position: relative;
+}
+.work-with-us .container {
+    padding: 20px 0;
+}
+
+.work-with-us .container button i{
+    padding-left: 10px;
+}
+
+/*Other Services*/
+.other-services .container {
+    padding: 30px 30px;
+}
+
+.other-services .container ul {
+    list-style-type: square;
+    
 }
 
 
@@ -143,6 +172,8 @@ body {
    
 }
 }
+
+
 
 /*Backgrounds*/
 .bg-primary {
