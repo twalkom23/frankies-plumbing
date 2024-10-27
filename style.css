@@ -106,6 +106,28 @@ body {
     
 }
 
+/*Process Section */
+.process .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+.process .container .card {
+    height: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.process .container .card h4 {
+    color: gray;
+}
+.process .container .card p a {
+    color: var(--dark-colour);
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 
 
 
