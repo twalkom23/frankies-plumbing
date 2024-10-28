@@ -128,6 +128,29 @@ body {
     cursor: pointer;
 }
 
+/*Book now section*/
+.book-now .container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 40px 0;
+}
+.book-now .container img {
+    width: 100%;
+    height: auto;
+}
+
+/*Quick Links*/
+.quick-links .container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+}
+.quick-links .container .links a {
+    color: var(--light-colour);
+}
+
 
 
 
@@ -197,6 +220,7 @@ body {
 
 
 
+
 /*Backgrounds*/
 .bg-primary {
     background: var(--primary-colour);
@@ -209,6 +233,14 @@ body {
 .bg-dark {
     background: var(--dark-colour);
     color: #fff;
+}
+
+/*Lists*/
+li {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
 }
 
 
