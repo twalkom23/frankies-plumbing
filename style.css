@@ -14,6 +14,11 @@ body {
     --light-colour: #F9F8F8;
 }
 
+
+
+
+
+
 /*Main Header*/
 .main-page-header .container {
     display: flex;
@@ -39,14 +44,43 @@ body {
 .rotate {
     transform: rotate(90deg);
 }
+.main-page-header .container .menu {
+    display: none;
+}
 }
 @media(min-width: 481px) {
     .main-page-header .container .hamburger {
         display: none;
     }
+    .main-page-header .container .phone {
+        display: none;
+    }
+    .main-page-header .container .menu ul {
+        display: flex;
+        gap: 3vw;
+    }
+    .main-page-header .container .menu ul a {
+        transition: 0.3s ease-in-out;
+    }
+    .main-page-header .container a .logo p {
+        transition: 0.3s ease-in-out;
+    }
+    .main-page-header .container .menu ul a:hover {
+        color: gray;
+    }
+    .main-page-header .container a .logo p:hover {
+        color: gray;
+    }
+  
 }
 
+
+
+
+
+
 /*drop down menu*/
+/*Mobile Only*/
 .drop-down-menu {
     position: absolute;
     z-index: 1000;
@@ -74,16 +108,19 @@ body {
     color: var(--primary-colour);
 }
 
+
+
+
+
+
 /*Hero*/
+/*All Hero*/
 .hero {
     background: url(./assets/hero-image.jpg) no-repeat;
-    background-size: 550px auto;
 }
 .hero .container {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding-bottom: 30px;
     position: relative;
 }
 .hero .container .hero-text {
@@ -94,8 +131,51 @@ body {
     flex-direction: column;
     gap: 10px;
 }
+/*Mobile Hero*/
+@media (max-width: 480px) {
+    .hero {
+        background-size: 550px auto;
+    }
+    .hero .container {
+        gap: 20px;
+        padding-bottom: 30px;
+    }
+    .hero .container .hero-text {
+        width: 55%;
+        padding-top: 20px;
+        gap: 10px;
+    }
+}
+/*Desktop Hero*/ 
+@media (min-width: 481px) {
+    .hero {
+        background-size: 100%;  
+    }
+    .hero .container {
+        display: flex;
+        gap: 15vh;
+        padding: 70px 0;
+        
+    }
+    .hero .container .hero-text {
+        width: 40%;
+        font-size: 2.3rem;
+    }
+   
+}
+
+
+
+
+
+
 
 /*Service Cards*/
+.service-cards .container .card a {
+    color: var(--dark-colour);
+}
+/*Mobile Screen*/
+@media (max-width: 480px) {
 .service-cards .container{
     display: flex;
     flex-direction: column;
@@ -113,9 +193,53 @@ body {
 .service-cards .container .card {
     padding: 20px;
 }
-.service-cards .container .card a {
-    color: var(--dark-colour);
 }
+/*Desktop*/
+@media (min-width: 481px) {
+    .service-cards .container {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+        padding: 50px;
+    
+    }
+    .service-cards .container .first {
+        grid-row: 1/2;
+        grid-column: 1/2;
+    }
+    .service-cards .container .second {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .service-cards .container .third {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .service-cards .container .fourth {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
+    .service-cards .container .card {
+        padding: 15px 40px;
+        
+    }
+    .service-cards .container .card a {
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .service-cards .container .card a:hover {
+        color: gray;
+    }
+}
+
+
+
+
+
+
+
+
 
 /*About Section*/
 .about .container .about-content {
@@ -124,6 +248,12 @@ body {
     gap: 20px;
     padding: 30px 0;
 }
+
+
+
+
+
+
 
 /*Why Work with us*/
 .work-with-us .container img {
@@ -144,6 +274,14 @@ body {
     padding-left: 10px;
 }
 
+
+
+
+
+
+
+
+
 /*Other Services*/
 .other-services .container {
     padding: 30px 30px;
@@ -153,6 +291,12 @@ body {
     list-style-type: square;
     
 }
+
+
+
+
+
+
 
 /*Process Section */
 .process .container {
@@ -176,6 +320,11 @@ body {
     cursor: pointer;
 }
 
+
+
+
+
+
 /*Book now section*/
 .book-now .container {
     display: flex;
@@ -188,6 +337,13 @@ body {
     height: auto;
 }
 
+
+
+
+
+
+
+
 /*Quick Links*/
 .quick-links .container {
     display: flex;
@@ -198,6 +354,11 @@ body {
 .quick-links .container .links a {
     color: var(--light-colour);
 }
+
+
+
+
+
 
 /*Footer*/
 footer .social-media-icons a i {
@@ -220,6 +381,13 @@ footer .social-media-icons {
 
 
 
+
+
+
+
+
+
+
 /*Utility Classes*/
 /* Containers */
 .container {
@@ -228,27 +396,37 @@ footer .social-media-icons {
 }
 
 /*Buttons*/ 
-@media(max-width: 480px) {
+
     .btn-light{
         background: var(--light-colour);
         color: var(--primary-colour);
         border: none;
-        padding: 5px 10px;
+        padding: 8px 15px;
         border-radius: 13px;
         width: fit-content;
         cursor: pointer;
+        transition: 0.3s;
+    }
+    .btn-light:hover {
+        background-color: var(--dark-colour);
     }
     .btn-dark {
         background-color: var(--primary-colour);
         color: var(--light-colour);
         border: none;
-        padding: 5px 10px;
+        padding: 8px 15px;
         border-radius: 13px;
         width: fit-content;
         box-shadow: -5px -5px 5px rgba(0, 0, 0, 0.3);
         cursor: pointer;
+        transition: 0.3s;
     }
-}
+    .btn-dark:hover {
+        background-color: var(--dark-colour);
+    }
+
+
+
 
 /*text*/
 @media(max-width: 480px) { /*Small Mobile screens*/
@@ -285,19 +463,19 @@ footer .social-media-icons {
 }
 @media(min-width: 481px) { /*Larger Screens*/
     .text-small {
-        font-size: 1rem;
+        font-size: 0.9rem;
         line-height: 1.4;
         font-weight: normal;
        
     }
     .text-regular {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1.4;
         font-weight: normal;
         
     }
     .text-large {
-        font-size: 2rem;
+        font-size: 1.8rem;
         line-height: 1.4;
         font-weight: normal;
        
