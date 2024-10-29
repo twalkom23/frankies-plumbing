@@ -451,15 +451,27 @@ body {
 
 
 /*Book now section*/
+/*All*/
 .book-now .container {
     display: flex;
     flex-direction: column;
     gap: 25px;
     padding: 40px 0;
+    
 }
 .book-now .container img {
     width: 100%;
     height: auto;
+}
+/*Mobile*/
+@media (min-width: 481px) {
+    .book-now .container {
+        align-items: center;
+    }
+    .book-now .container img {
+        width: 50%;
+        height: auto;
+    }
 }
 
 
