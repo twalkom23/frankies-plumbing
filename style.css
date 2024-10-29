@@ -389,6 +389,19 @@ body {
 
 
 /*Process Section */
+/*All*/
+.process .container .card h4 {
+    color: gray;
+}
+.process .container .card p a {
+    color: var(--dark-colour);
+    font-weight: 600;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/*Mobile*/
+@media (max-width: 480px) {
 .process .container {
     display: flex;
     flex-direction: column;
@@ -400,14 +413,36 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-.process .container .card h4 {
-    color: gray;
 }
-.process .container .card p a {
-    color: var(--dark-colour);
-    font-weight: 600;
-    text-decoration: underline;
-    cursor: pointer;
+@media (min-width: 481px) {
+    .process .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        height: 700px;
+        padding: 30px 0;
+    }
+    .process .container .card {
+        padding: 10px 50px
+    }
+    .process .container .one {
+        grid-row: 1/2;
+        grid-column: 1/2
+        
+    }
+    .process .container .two {
+        grid-row: 1/2;
+        grid-column: 2/3;
+    }
+    .process .container .three {
+        grid-row: 2/3;
+        grid-column: 1/2;
+    }
+    .process .container .four {
+        grid-row: 2/3;
+        grid-column: 2/3;
+    }
 }
 
 
