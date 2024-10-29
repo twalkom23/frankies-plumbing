@@ -259,6 +259,9 @@ body {
     .about .container .about-content h2 {
         font-size: 2.5rem;
     }
+    .about .container .about-content {
+        gap: 30px;
+    }
 }
 
 
@@ -268,10 +271,13 @@ body {
 
 
 /*Why Work with us*/
+/*All*/
 .work-with-us .container img {
     width: 100%;
     height: auto;
 }
+/*Mobile*/
+@media (max-width: 480px) {
 .work-with-us .container {
     display: flex;
     flex-direction: column;
@@ -285,7 +291,50 @@ body {
 .work-with-us .container button i{
     padding-left: 10px;
 }
+.work-with-us .container .image-button button {
+    margin-top: 20px;
+}
+.work-with-us .container .text button {
+    display: none;
+}
+}
+@media (min-width: 481px) {
+    .work-with-us .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr
+    }
+    .work-with-us .container .text {
+        grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding: 50px 0;
+        width: 80%;
+    }
+    .work-with-us .container .image-button {
+        grid-column: 2/3;
+    }
+    .work-with-us .container .image-button {
+        display: flex;
+        flex-direction: column;
+        padding: 50px 0;
+        gap: 30px;
+    }
+    .work-with-us .container img {
+        width: 100%;
+        height: auto;
+    }
+    .work-with-us .container .text button {
+        align-self: start;
+        display: flex;
+        align-items: center;
+        gap: 18px;
+    }
+    .work-with-us .container .image-button button {
+        display: none;
+    }
 
+}
 
 
 
@@ -295,12 +344,41 @@ body {
 
 
 /*Other Services*/
+/*Mobile*/
+@media (max-width: 480px){
 .other-services .container {
     padding: 30px 30px;
 }
 
 .other-services .container ul {
     list-style-type: square;
+}
+}
+/*Desktop*/
+@media (min-width: 481px) {
+    .other-services .container {
+        padding: 60px 0;
+    }
+    .other-services .container ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top: 20px;
+    }
+    .other-services .container h3 {
+        display: flex;
+        justify-content: center;
+        
+    }
+    .other-services .container ul div {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.5rem;
+        gap: 20px;
+        padding-left: 25%;
+    }
+    .other-services .container ul div li {
+        list-style-type: circle;
+    }
     
 }
 
@@ -475,19 +553,19 @@ footer .social-media-icons {
 }
 @media(min-width: 481px) { /*Larger Screens*/
     .text-small {
-        font-size: 0.9rem;
+        font-size: 1rem;
         line-height: 1.4;
         font-weight: normal;
        
     }
     .text-regular {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         line-height: 1.4;
         font-weight: normal;
         
     }
     .text-large {
-        font-size: 1.8rem;
+        font-size: 2rem;
         line-height: 1.4;
         font-weight: normal;
        
