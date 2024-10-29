@@ -222,7 +222,7 @@ body {
     }
     .service-cards .container .card {
         padding: 15px 40px;
-        
+        min-height: 350px;
     }
     .service-cards .container .card a {
         cursor: pointer;
@@ -247,6 +247,18 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 30px 0;
+}
+/*Desktop*/
+@media (min-width: 481px) {
+    .about .container p {
+        width:70%;
+    }
+    .about .container {
+        padding: 30px 15%;
+    }
+    .about .container .about-content h2 {
+        font-size: 2.5rem;
+    }
 }
 
 
