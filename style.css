@@ -104,7 +104,7 @@ body {
     max-height: 200px;
     opacity: 1;
 }
-.hero .drop-down-menu ul a {
+.drop-down-menu ul a {
     color: var(--primary-colour);
 }
 
@@ -247,6 +247,13 @@ body {
     flex-direction: column;
     gap: 20px;
     padding: 30px 0;
+}
+.about .container .about-content a {
+    color: var(--primary-colour);
+    transition: 0.3s;
+}
+.about .container .about-content a:hover {
+    color: gray;
 }
 /*Desktop*/
 @media (min-width: 481px) {
@@ -700,5 +707,36 @@ li {
 a {
     text-decoration: none;
 }
+
+
+
+
+/*Other Pages*/
+
+/*About us page*/
+.about-page-main .container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 20px 10px;
+}
+.about-page-main .container div h3 {
+    color: var(--dark-colour);
+}
+.about-page-main .container h4 {
+    align-self: center;
+    color: var(--dark-colour);
+} 
+.about-page-main .container div ul li span {
+    font-weight: 600;
+}
+/*Desktop*/
+@media(min-width: 481px) {
+    .about-page-main .container {
+        width: 60%;
+        max-width: 800px;
+    }
+}
+
 
 
